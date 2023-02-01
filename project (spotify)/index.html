@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpotifyClone</title>
+    <link rel="stylesheet" href="style.css">    <!--linking css-->
+    <script src="https://kit.fontawesome.com/f8ad259653.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="lo.png" width="90px" alt="spotify">spotify</li>
+            <li>Home</li>
+            <li>About</li>
+
+        </ul>
+    </nav>
+    <div class="container">
+        <!-- div.songList -->
+        <div class="songList">
+            <h1>Best of the year</h1> <br>
+
+            <div class="songContainer">
+                <div class="songItem">
+                    <img alt="1" srcset="">
+                    <span class="songName">Lose yourself</span>
+                    <span class="songlistplay"><span  class="timeIcon"> 0:30 <i id="0" class=" songItemPlay fa-regular fa-circle-play"> </i></span></span>    <!--class ka naam likhna ho toh class ke andr hi likh do --> 
+                </div>
+                <div class="songItem">
+                    <img  alt="2" srcset="">
+                    <span class="songName">My ordinary life</span>
+                    <span class="songlistplay"><span  class="timeIcon"> 4:35 <i id="1" class=" songItemPlay fa-regular fa-circle-play"> </i></span></span>
+                </div>
+                <div class="songItem">
+                    <img  alt="1" srcset="">
+                    <span class="songName">Anti-hero</span>
+                    <span class="songlistplay"><span  class="timeIcon"> 4:35 <i id="2" class=" songItemPlay fa-regular fa-circle-play"> </i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1" srcset="">
+                    <span class="songName">Beautiful people</span>
+                    <span class="songlistplay"><span  class="timeIcon"> 4:35 <i id="3" class=" songItemPlay fa-regular fa-circle-play"> </i></span></span> 
+                </div>
+                <div class="songItem">
+                    <img alt="1" srcset="">
+                    <span class="songName">Toman</span>
+                    <span  class="songlistplay"><span class="timeIcon"> 4:35 <i id="4" class=" songItemPlay fa-regular fa-circle-play"> </i></span></span>                </div>
+                <div class="songItem">
+                    <img alt="1" srcset="">
+                    <span class="songName">Hello Future</span>
+                    <span class="songlistplay"><span  class="timeIcon"> 4:35 <i id="5" class=" songItemPlay fa-regular fa-circle-play"> </i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1" srcset="">
+                    <span class="songName">Silhouette</span>
+                    <span class="songlistplay"><span  class="timeIcon"> 4:35 <i id="6" class=" songItemPlay fa-regular fa-circle-play"> </i></span></span>
+                </div>
+            </div>
+            <div class="songBanner"></div>
+        </div>
+    </div>
+
+    <div class="bottom" id="b1">
+        <input type="range" id="myProgressbar" min="0" value="0" max="100"> <!-- /ye  range bar ke liye -->
+
+        <div class="icons">
+            <!-- fontawesome icons    pehle kit ka code add kiya     icon ka size bada karne ke liye fa-2x likhte hai-->
+
+            <script src="https://kit.fontawesome.com/f8ad259653.js" crossorigin="anonymous"></script>
+            <i class="fa-solid fa-3x fa-backward-step" id="previous"></i>
+            <i class="fa-regular fa-3x fa-circle-play" id="masterplay"> </i>
+            <i class="fa-solid fa-3x fa-forward-step" id="next"></i>
+
+
+        </div>
+        <div class="songInfo">
+
+            <img src="q.gif" width="80px" alt="" id="gif">
+        </div>
+
+        <div class="name">
+          <span id="mastersong">  <h2>Lose yourself </h2></span> 
+
+
+        </div>
+    </div>
+
+   
+</body>
+<script src="script.js"></script>
+</html>

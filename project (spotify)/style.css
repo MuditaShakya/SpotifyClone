@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Quicksand&family=Square+Peg&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Square+Peg&display=swap');
+
+body{
+    background-color:grey;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Arvo', serif;
+   
+
+}
+nav ul{
+display: flex;
+align-items: center ;
+list-style-type: none;
+height: 65px;
+background-color: rgb(35, 33, 33);
+color: whitesmoke ;
+
+}
+
+.brand {                 /* ye jo spotify likha hai uska display*/
+    display: flex ;
+    align-items: center ;
+    font-size:x-large;
+}
+
+nav ul li {
+        padding: 0 12px; /*upar neeche 0, side 12*/
+ }
+
+ .bottom{
+   position:sticky;
+   height: 19px;
+   background-color: rgb(44, 42, 42);
+   color: white;
+   bottom: 0; 
+   display: flex;                 /*ye 2 lines se range bar beech me aa gaya*/
+   justify-content: center;
+   align-items: center;         /*isse play icons centre me aye*/
+   flex-direction: column;
+   padding: 35px;
+
+
+ }
+
+ .container{          
+    min-height: 68vh;  /*isse bottom neeche chala jaega kyuki container ki height badi kardi. isse column ki height kam hoti*/
+    color:whitesmoke ;
+    font-family: 'Quicksand', sans-serif;
+    background-color:black;
+    display: flex;
+    margin:23px auto;                /*important:  se top bottom arrange hoga aur auto se centre par aa jaega/ column centre me laane ka way*/
+    width: 60%;                            /*box ki breadth*/
+
+    border-radius: 12px;                  /*border soft krna*/
+    padding: 35px;                       /*content aur box ke border ke beech ka gap*/
+    background-image: url(mmm.jpg);
+
+    
+
+ }
+    #myProgressbar{    /*agar id se access karna ho toh # use karte. range bar ki width*/
+        width: 97vw;
+        cursor: pointer;
+
+    }
+
+    .icons{
+        
+        margin: 24px 0 ;
+        cursor: pointer;
+    }
+.songItem img{
+width: 60px;
+height:39px;
+border-radius: 35px;
+margin: 0 12px;
+}
+
+/*alignment wagera sirf flex me kar skte*/
+.songItem{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color:rgb(79, 76, 76);
+    color:whitesmoke;
+    margin: 20px auto;
+    justify-content:space-between;
+   overflow: hidden; 
+  
+    border-radius: 35px;
+
+}
+.timeIcon{
+    margin: 0px 23px;
+}
+.timeIcon i{
+    cursor: pointer; /*play par jane par clickaa jaega*/
+}
+
+.songContainer{
+    margin-top: 34px;
+}
+.songInfo{
+    position:absolute;
+    left:0; /*isse gif left me pahucha*/
+}
+
+.name{font-family: 'Arvo', serif;
+    position: absolute;
+left:82px;}
+
+/*gif */
+
+.songInfo img{     
+    opacity: 0;
+    transition: opacity 0.8s ease-in;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+ 
